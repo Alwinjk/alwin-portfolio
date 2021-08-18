@@ -314,11 +314,6 @@ nav ul li:hover>.dropdown {
     font-family: arial;
 }
 
-.price {
-    color: grey;
-    font-size: 22px;
-}
-
 .card button {
     border: none;
     outline: 0;
@@ -329,6 +324,11 @@ nav ul li:hover>.dropdown {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+}
+
+.card h3 {
+    font-size: 25px;
+    padding: 14px 7px;
 }
 
 .card button:hover {
