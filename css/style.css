@@ -1,0 +1,415 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: "Raleway", Arial, sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: white;
+    font-weight: 600;
+}
+
+a:hover {
+    color: rgb(150, 151, 91);
+}
+
+.hero {
+    position: relative;
+    height: 100px;
+}
+
+.ham-menu {
+    color: white;
+    display: none;
+}
+
+.index-header {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #25313d;
+    /* background-color: #f4fadc; */
+}
+
+nav {
+    display: inline-block;
+    flex-grow: 1;
+    text-align: end;
+    background-color: #25313d;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 10px;
+    position: relative;
+}
+
+.dropdown {
+    visibility: hidden;
+    opacity: 0;
+    top: 160%;
+    position: absolute;
+    text-align: left;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown li {
+    display: block;
+    padding: 10px
+}
+
+.dropdown li a {
+    color: #333
+}
+
+nav ul li:hover>.dropdown {
+    -webkit-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    transition-delay: 0s;
+    margin-top: 0px;
+    visibility: visible;
+    opacity: 1;
+}
+
+#logo {
+    display: inline-block;
+}
+
+#logo a {
+    font-weight: 900;
+    font-family: 'Style Script', cursive;
+}
+
+
+/* intro containers */
+
+.intro-container {
+    width: 100%;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-self: center;
+    margin: 0px 40px;
+}
+
+.intro-text h1 {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.intro-text h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #d5c455;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.btn-yellow {
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #d5c455;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: #d5c455;
+    border: 1px solid #d5c455;
+}
+
+.btn-white {
+    background: #fff;
+    color: #000;
+    border-radius: 0;
+    box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1rem 2rem;
+    border: 1px solid rgb(233, 222, 222);
+}
+
+.intro-container .container {
+    width: 100%;
+    margin: 0;
+}
+
+.intro-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    font-size: 12px;
+}
+
+
+/* about container */
+
+.about-container {
+    background-color: #f2f4fa;
+}
+
+.about-container h1,
+.about-container h2 {
+    text-align: center;
+}
+
+.about-container h1 {
+    font-size: 35px;
+}
+
+.span-yellow {
+    color: #d5c455;
+}
+
+.about-container i {
+    font-size: 300px;
+    color: #25313d;
+}
+
+.icon-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-center i {
+    padding: 70px 0;
+}
+
+.about-container p {
+    color: #25313d;
+    font-weight: 900px;
+    text-align: justify;
+}
+
+
+/* experience container */
+
+.experience-container {
+    background-color: white;
+    margin: 100px 0px;
+}
+
+.experience-container .col-md {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.yellow-txt {
+    color: #d5c455;
+}
+
+.experience-container .col-md:hover {
+    background-color: #d5c455;
+    color: white;
+}
+
+.width-70 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.experience-container h2 {
+    font-weight: 700;
+    font-size: 35px;
+    background-color: white;
+}
+
+.width-60 {
+    width: 65%;
+    margin: 40px auto;
+}
+
+.whitish {
+    background-color: rgb(235, 230, 230);
+}
+
+.margin-15 {
+    margin: 15px auto;
+}
+
+.experience-container h3 {
+    font-weight: 900;
+}
+
+.qual-container {
+    margin: 100px 0px;
+}
+
+.width-40 {
+    margin: auto;
+    width: 40%;
+}
+
+.skill-container h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin: 25px auto;
+}
+
+.bg-warning {
+    background-color: #d5c455 !important;
+}
+
+.experience-container i {
+    font-size: 100px;
+    color: #d5c455;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+footer {
+    background-color: #25313d;
+    height: 100px;
+}
+
+footer p {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .ham-menu {
+        display: inline-block;
+    }
+    header {
+        background-color: #25313d;
+    }
+    .index-header {
+        background-color: #25313d;
+    }
+    nav {
+        display: none;
+    }
+    header,
+    nav,
+    nav ul,
+    nav ul li {
+        padding: 0;
+    }
+    #logo {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        text-align: start;
+        padding: 5px 30px;
+    }
+    .intro-container .intro-text {
+        margin: 0;
+    }
+    .intro-text {
+        text-align: center;
+        padding: 60px 35px !important;
+    }
+    .intro-text h1 {
+        font-size: 25px;
+    }
+    .intro-container .m-5 {
+        margin: 40px 0px !important;
+        padding: 0px !important;
+    }
+    .my-flex {
+        width: 100%;
+    }
+    .about-container .intro-text {
+        margin: 0;
+        padding: 0px !important;
+    }
+    .icon-center i {
+        padding: 30px 0;
+    }
+    .width-60 {
+        width: 80%;
+    }
+    .width-70 {
+        width: 90%;
+    }
+    .width-40 {
+        width: 100%;
+        margin: auto 7px;
+    }
+    .card {
+        margin: 25px;
+    }
+}
